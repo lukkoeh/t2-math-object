@@ -14,18 +14,30 @@
     <main>
       <h3>Wozu braucht es diese WEB-API</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio
-        mauris, <kbd>sollicitudin</kbd> et tellus quis, tincidunt tincidunt
-        urna. <mark>Vivamus facilisis mi</mark> arcu, quis tempor sapien porta
-        laoreet. Nulla nec semper arcu. Proin vehicula at urna eu tristique.
-        Fusce dignissim ante libero, ut vulputate ex congue ac. Proin malesuada,
-        mauris a ultrices congue, urna est lacinia felis, quis ornare diam mi et
-        mauris. Suspendisse ornare finibus diam nec egestas. Nunc tristique ante
-        at erat varius, eu pulvinar dui sollicitudin. In at aliquam nulla, ut
-        tristique arcu. Nam non nibh condimentum, pulvinar sapien ac, gravida
-        est. Morbi dapibus tristique turpis, et auctor odio egestas at. Vivamus
-        placerat mollis magna, et fringilla ligula semper a. In eleifend
-        sagittis ante, id volutpat nisi rutrum a.
+        In JavaScript gibt es verschiedene Möglichkeiten, sich mit seinem Lieblingsthema, der Mathematik, zu beschätigen. Sowohl das Math Object als auch diverse number methods stellen diverse Möglichkeiten bereit, mit Zahlen und Rechnungen zu interagieren. Einige von diesen sollen hier vorgestellt werden:
+        <br />
+        Zunächst sollen die Number-Methods in JavaScript näher beleuchtet werden.
+        <h4>toString()-Funktion</h4>
+        Die toString()-Methode wandelt ein Object explizit in einen String um, um bspw. die String Methoden verwenden zu können. In diesem Beispiel wird eine Zahl in einen String umgewandelt, um mittels .at() auf die einzelnen Zeichen zuzugreifen.
+        <pre>
+          <code class="language-js">
+    let a = 234
+    let firstdigit = a.toString().at(0) // Ausgabe: 2
+    let seconddigit = a.toString().at(1) // Ausgabe: 3
+    let thirddigit = a.toString().at(2) // Ausgabe: 4
+          </code>
+        </pre>
+        <h4>toExponential()-Funktion</h4>
+        Die toExponential-Methode wandelt eine vorhandene Zahl in die wissenschaftliche Schreibweise mit e um. Mit dem Parameter lässt sich eine Rundung einstellen.
+        <br />
+        <pre>
+          <code class="language-js">
+    let a = 4.392802894
+    a = a.toExponential(4)
+    > 4.3928e+0
+          </code>
+        </pre>
+        <h4>toFixed()</h4>
       </p>
       <h3>Codebeispiele</h3>
       <button id="beispiel1">Ein Beispielskript ausführen</button>
