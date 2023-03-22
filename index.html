@@ -10,12 +10,13 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header><h2>Kurzanleitung Math-Object & Number-Methods</h2></header>
+    <header><h1>Kurzanleitung Math-Object & Number-Methods</h2></header>
     <main>
-      <h3>Wozu braucht es diese WEB-API</h3>
+      <h2>Wozu braucht es diese WEB-API</h3>
       <p>
         In JavaScript gibt es verschiedene Möglichkeiten, sich mit seinem Lieblingsthema, der Mathematik, zu beschätigen. Sowohl das Math Object als auch diverse number methods stellen diverse Möglichkeiten bereit, mit Zahlen und Rechnungen zu interagieren. Einige von diesen sollen hier vorgestellt werden:
         <br />
+        <h3>Number-Methods</h3>
         Zunächst sollen die Number-Methods in JavaScript näher beleuchtet werden.
         <h4>toString()-Funktion</h4>
         Die toString()-Methode wandelt ein Object explizit in einen String um, um bspw. die String Methoden verwenden zu können. In diesem Beispiel wird eine Zahl in einen String umgewandelt, um mittels .at() auf die einzelnen Zeichen zuzugreifen.
@@ -37,7 +38,33 @@
     > 4.3928e+0
           </code>
         </pre>
-        <h4>toFixed()</h4>
+        <h4>toFixed()-Funktion</h4>
+        Die toFixed()-Funktion erledigt zwei Aufgaben gleichzeitig: Sie wandelt eine Kommazahl in einen String um und rundet diese noch auf die im Parameter spezifizierte Anzahl an Stellen <b>nach dem Komma</b>.
+        <pre>
+          <code class="language-js">
+    let a = 4.23294739487
+    a = a.toFixed(2)
+    > "4.23"
+          </code>
+        </pre>
+        <h4>toPrecision()-Funktion</h4>
+        Die toPrecision()-Funktion funktioniert so etwa wie die toFixed()-Funktion. Der Unterschied ist, dass der Parameter bestimmt, wie lang der gesamte String sein soll. 5 bedeutet also 5 Zeichen.
+        <pre>
+          <code class="language-js">
+    let a = 4.443242432
+    a = a.toPrecision(5)
+    > 4.4432
+          </code>
+        </pre>
+        <h4>valueOf()-Funktion</h4>
+        Mit der valueOf-Funktion ist eine Zahl endlich eine Zahl, und zwar definitiv eine Zahl! Mit dieser Funktion erzwingt man eine Konvertierung eines Objekts zu einer Zahl.
+        <pre>
+          <code class="language-js">
+    let x = "123";
+    x = x.valueOf()*2;
+    > 246
+          </code>
+        </pre>
       </p>
       <h3>Codebeispiele</h3>
       <button id="beispiel1">Ein Beispielskript ausführen</button>
