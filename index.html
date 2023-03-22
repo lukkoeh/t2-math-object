@@ -66,37 +66,10 @@
     > 246
           </code>
         </pre>
+        <h4>Fazit</h4>
+        Number-Methods sind höchst praktisch, wenn man sich nicht auf die automatische Erkennung des Datentyps durch die JavaScript Engine verlassen möchte und auch, wenn man einfach mal den Datentyp wechseln muss, um bspw. spezielle Methoden zu verwenden.
       </p>
-      <h3>Codebeispiele</h3>
-      <button id="beispiel1">Ein Beispielskript ausführen</button>
-      <pre><code class="language-js"> 
-    const container = document.querySelector("#container");
-    const text = document.querySelector("#text");
-    
-    const totalTime = 7500;
-    const breatheTime = (totalTime / 5) * 2;
-    const holdTime = totalTime / 5;
-    
-    breathAnimation();
-    
-    function breathAnimation() {
-        text.innerHTML = "Einatmen!";
-        container.className = "container grow"; // Growanimation in css
-    
-        setTimeout(() => {
-        text.innerHTML = "Halten";
-    
-        setTimeout(() => {
-            text.innerHTML = "Ausatmen!";
-            container.className = "container shrink"; // shrinkanimation in css
-        }, holdTime); // nach dem Halten ausatmen
-        }, breatheTime); // Nach einem Atemzyklus halten
-    }
-    setInterval(breathAnimation, totalTime);
-      </code></pre>
-    <h3>Die Math-Objects</h3>
-
-      <h4>Weitere Methoden</h4>
+      <h3>Weitere Methoden</h3>
       <table class="ws-table-all notranslate">
         <tbody><tr>
           <th style="width:20%">Method</th>
