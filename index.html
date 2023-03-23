@@ -140,16 +140,16 @@
       Mit diesem Math-Object
       <pre>
         <code class="language-js">
-          Math.ceil(2.8);
+          Math.floor(2.8);
           >2
 
-          Math.ceil(2.4);
+          Math.floor(2.4);
           >2
 
-          Math.ceil(2.2);
+          Math.floor(2.2);
           >2
 
-          Math.ceil(-2.2);
+          Math.floor(-2.2);
           >-3
         </code>
       </pre>
@@ -160,10 +160,13 @@
       <pre>
         <code class="language-js">
           Math.random()
-          >0.5467894626946024 //zwischen 0-1
+          >0.5467894626946024 //Wertebereich 0-1
+
+          (Math.random() * 10)+1
+          >10.876203730527193 //Wertebereich 1-11
 
           Math.floor(Math.random() * 10)+1
-          >6 //zwischen 1-10
+          >6 //Wertebereich 1-10
         </code>
       </pre>
       
