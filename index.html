@@ -70,56 +70,100 @@
         Number-Methods sind höchst praktisch, wenn man sich nicht auf die automatische Erkennung des Datentyps durch die JavaScript Engine verlassen möchte und auch, wenn man einfach mal den Datentyp wechseln muss, um bspw. spezielle Methoden zu verwenden.
       </p>
       <h3>Das Math-Object</h3>
+      Das Math-Objekt ist in JavaScript eine spezielle Art von Objekt, das viele nützliche mathematische Funktionen enthält. Hier sind einige Dinge, die du mit dem Math-Objekt in JavaScript machen kannst:
       <h4>Syntax</h4>
       Der allgemeine Aufbau der Math-Objects ist <b>Math.method(x)</b>
  
       <h4>abs(x)</h4>
-      Das abs(x)-Object gibt den absoluten Wert von x zurück.
+      Das Math-Object kann verwendet in Kombination mit abs(x). Es gibt den positiven (absoluten) Wert von x zurück.
       <pre>
         <code class="language-js">
-          Codestuff
+          Math.abs(-6.9);
+          >6.9
         </code>
       </pre>
       <h4>max(x, y, z, ..., n)</h4>
       Das max(x,...)-Objekt gibt den maximalen Wert einer Sammlung von Daten zurück. Dies ist ebenfalls auf min anzuwenden.
+      Diese Methode kann in Vermindung mit Arrays sehr hilfreich sein. 
       <pre>
         <code class="language-js">
-          Codestuff
+          Math.max(1, 69, 420, 12, -45, -333);
+          >420
+
+          Math.min(1, 69, 420, 12, -45, -333);
+          >1
         </code>
       </pre>
       <h4>sqrt(x)</h4>
-      blablabla
+      Das Math-Objekt kann verwendet werden, um die Quadratwurzel einer Zahl zu berechnen.
       <pre>
         <code class="language-js">
-          Codestuff
+          Math.sqrt(9);
+          >3
         </code>
       </pre>
       <h4>round(x)</h4>
-      blablabla
+      Das Math-Object kann auch standardtisiert runden.
+      Wichtig: Vergesset nicht, dass ihr stehts einen "."und kein "," nutzt!
       <pre>
         <code class="language-js">
-          Codestuff
+          Math.round(7.6);
+          >8 
+
+          Math.round(7.5);
+          >8
+
+          Math.round(7.4);
+          >7
         </code>
       </pre>
       <h4>ceil(x)</h4>
-      blablabla
+      Neben dem klassischen Runden, kann es auch nützlich sein <b>nur aufzurunden</b>. Hierbei wird immer zur nächst höchsten Integer gerundet.
+      Hierzu wird ceil(x) genutzt. Eselsbrücke: "ceil" stammt von ceiling = Decke -> also oben. 
       <pre>
         <code class="language-js">
-          Codestuff
+          Math.ceil(2.8);
+          >3
+
+          Math.ceil(2.4);
+          >3
+
+          Math.ceil(2.2);
+          >3
+
+          Math.ceil(-2.2);
+          >-2
         </code>
       </pre>
       <h4>floor(x)</h4>
-      blablabla
+      Als Gegenstück zu ceil(x) gibt es noch die "bodenständigere Funktion" (; namens floor(x). 
+      Mit diesem Math-Object
       <pre>
         <code class="language-js">
-          Codestuff
+          Math.ceil(2.8);
+          >2
+
+          Math.ceil(2.4);
+          >2
+
+          Math.ceil(2.2);
+          >2
+
+          Math.ceil(-2.2);
+          >-3
         </code>
       </pre>
       <h4>random(x)</h4>
-      blablabla
+      Wie wir bei Prof. Auch schon lernten: Die random(x) gibt einen zufälligen Wert zwischen [0-1[ aus. 
+      Wichtig ist zu beachten, dass 16 nachkommastellen ausgelierfert werden.
+      Oft wird diese Methode daher mit den Methoden round(x), ceil(x), floor(x) kombiniert und zusätzlich multipliziert zu dem Wertebereich indem du deine zufällige Zahl erhalten willst. 
       <pre>
         <code class="language-js">
-          Codestuff
+          Math.random()
+          >0.5467894626946024 //zwischen 0-1
+
+          Math.floor(Math.random() * 10)+1
+          >6 //zwischen 1-10
         </code>
       </pre>
       
