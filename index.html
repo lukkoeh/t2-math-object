@@ -72,7 +72,7 @@
           </code>
         </pre>
         <h4>Fazit</h4>
-        Number-Methods sind höchst praktisch, wenn man sich nicht auf die automatische Erkennung des Datentyps durch die JavaScript Engine verlassen möchte und auch, wenn man einfach mal den Datentyp wechseln muss, um bspw. spezielle Methoden zu verwenden.
+        Number-Methods sind höchst praktisch, wenn man sich nicht auf die automatische Erkennung des Datentyps durch die JavaScript Engine verlassen möchte und auch, wenn man einfach mal den Datentyp wechseln muss, um bspw. spezielle Methoden zu verwenden oder die Ausgabe in ein bestimmes Format zu bringen.
       </p>
       <h3>Das Math-Object</h3>
       Das Math-Objekt ist in JavaScript eine spezielle Art von Objekt, das viele nützliche mathematische Funktionen enthält. Hier sind einige Dinge, die du mit dem Math-Objekt in JavaScript machen kannst:
@@ -184,87 +184,109 @@
         </tr>
         <tr>
           <td> <a>acos(x)</a></td>
-          <td>Returns the arccosine of x, in radians</td>
+          <td>Hiermit kann man den Arcus Cosinus von x berechnen</td>
         </tr>
         <tr>
           <td> <a>acosh(x)</a></td>
-          <td>Returns the hyperbolic arccosine of x</td>
+          <td>Hiermit kann man den hyperbolischen Arcus Cosinus von x berechnen, was sonst?</td>
         </tr>
         <tr>
           <td> <a>asin(x)</a></td>
-          <td>Returns the arcsine of x, in radians</td>
+          <td>Erlaubt die Berechnung des Arcus Sinus von x</td>
         </tr>
         <tr>
           <td> <a>asinh(x)</a></td>
-          <td>Returns the hyperbolic arcsine of x</td>
+          <td>Hiermit kann man den hyperbolischen Arcus Sinus von x berechnen.</td>
         </tr>
         <tr>
           <td> <a>atan(x)</a></td>
-          <td>Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians</td>
+          <td>Hiermit kann man den Arcus tangens von x berechnen.</td>
         </tr>
         <tr>
           <td> <a>atan2(y, x)</a></td>
-          <td>Returns the arctangent of the quotient of its arguments</td>
+          <td>Berechnet den Quotient von x und y und berechnet damit den Arcus Tangens</td>
         </tr>
         <tr>
           <td> <a>atanh(x)</a></td>
-          <td>Returns the hyperbolic arctangent of x</td>
+          <td>Hiermit kann man den hyperbolischen Arcus tangens von x berechnen.</td>
         </tr>
         <tr>
           <td> <a>cbrt(x)</a></td>
-          <td>Returns the cubic root of x</td>
+          <td>Berechnet die dritte Wurzel von x</td>
         </tr>
+        <tr>
+          <td> <a>ceil(x)</a></td>
+          <td>Rundet die gegebene Zahl auf</td>
         </tr>
         <tr>
           <td> <a>cos(x)</a></td>
-          <td>Returns the cosine of x (x is in radians)</td>
+          <td>Berechnet den Cosinus von x (Rad)</td>
         </tr>
         <tr>
           <td> <a>cosh(x)</a></td>
-          <td>Returns the hyperbolic cosine of x</td>
+          <td>Berechnet den hyperbolischen Cosinus von x</td>
         </tr>
         <tr>
           <td> <a>exp(x)</a></td>
-          <td>Returns the value of E<sup>x</sup></td>
+          <td>Berechnet e^x</td>
+        </tr>
+        <tr>
+          <td> <a>floor(x)</a></td>
+          <td>Rundet eine Zahl x auf den niedrigeren Integer ab.</td>
         </tr>
         <tr>
           <td> <a>log(x)</a></td>
-          <td>Returns the natural logarithm (base E) of x</td>
+          <td>Berechnet den natürlichen Logarithmus (auch ln) von x</td>
         </tr>
         <tr>
         <tr>
           <td> <a>pow(x, y)</a></td>
-          <td>Returns the value of x to the power of y</td>
+          <td>Berechnet x^y</td>
+        </tr>
+        <tr>
+          <td><a>random()</a></td>
+          <td>Generiert eine Pseudozufällige Zahl zwischen 0 und 1</td>
+        </tr>
+        <tr>
+          <td> <a>round(x)</a></td>
+          <td>Rundet eine Zahl nach mathematischen Grundsätzen auf den nächsten Integer</td>
         </tr>
         <tr>
           <td> <a>sign(x)</a></td>
-          <td>Returns if x is negative, null or positive (-1, 0, 1)</td>
+          <td>Gibt zurück, ob eine Zahl negativ oder positiv (oder 0) ist</td>
         </tr>
         <tr>
           <td> <a>sin(x)</a></td>
-          <td>Returns the sine of x (x is in radians)</td>
+          <td>Berechnet den Sinus von x</td>
         </tr>
         <tr>
           <td> <a>sinh(x)</a></td>
-          <td>Returns the hyperbolic sine of x</td>
+          <td>Berechnet den hyperbolischen Sinus von x</td>
+        </tr>
+        <tr>
+          <td> <a>sqrt(x)</a></td>
+          <td>Zieht die Quadratwurzel von x</td>
         </tr>
         <tr>
           <td> <a>tan(x)</a></td>
-          <td>Returns the tangent of an angle</td>
+          <td>Berechnet den Tangens von x</td>
         </tr>
         <tr>
           <td> <a>tanh(x)</a></td>
-          <td>Returns the hyperbolic tangent of a number</td>
+          <td>Berechnet den hyperbolischen Tangens von x</td>
         </tr>
         <tr>
           <td> <a>trunc(x)</a></td>
-          <td>Returns the integer part of a number (x)</td>
+          <td>Schneidet die Nachkommastellen ohne Rundung ab und gibt den integer zurück</td>
         </tr>
         </tbody></table>
       <h3>Weiterführende Links:</h3>
       <ul>
         <li>
-          w3schools: <a href="https://www.w3schools.com/js/js_math.asp">Probiere-es-selbst-auf-w3schools</a>
+          Number-Methods: <a href="https://www.w3schools.com/js/js_number_methods.asp">w3schools</a>
+        </li>
+        <li>
+          Math-Object: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math?retiredLocale=de">MDN</a>
         </li>
       </ul>
     </main>
